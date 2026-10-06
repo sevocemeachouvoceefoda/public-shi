@@ -187,7 +187,7 @@ local function getOffsets()
  if off then _offCache=off; return off end
  _offSource="fallback"
  _offCache={
-  ClientVersion="version-2366ba214ec740ca",
+  ClientVersion="no help",
   AnimationTrack={Animation=0xa8,Animator=0x100,IsPlaying=0x522,Looped=0xd5,Speed=0xc4,TimePosition=0xc8},
   Animator={ActiveAnimations=0xa80},
   Sound={IsPlaying=0x130,SoundId=0xb8,Looped=0x12d,Volume=0x120},
@@ -203,7 +203,6 @@ local OFF_NODE_TRACK=0x10
 local OFF_TRACK_ANIM=O.AnimationTrack.Animation or 0xa8
 local OFF_TRACK_TIMEPOS=O.AnimationTrack.TimePosition or 0xc8
 local OFF_ANIM_ANIMID=0xb0
-print("[Chain] Offsets source: ".._offSource.." | Roblox: "..tostring(O.ClientVersion or "?"))
 
 local combatStamOn,normalStamOn=false,false
 local winchesterOn=false
@@ -880,7 +879,6 @@ do
   end
  end
 
- print("[Chain] keybind overlay disable attempt: "..(found and "ok" or "not found"))
 end
 
 Lib:Notify("Chain","Press P to toggle",4,"info")
