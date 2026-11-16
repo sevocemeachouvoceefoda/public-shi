@@ -1,6 +1,7 @@
+-- Arte ASCII removida; hash original preservado para manter a decodificação intacta.
 return(function(...)
 	local bt,ch,tc,fl=string.byte,string.char,table.concat,math.floor
-	local h=0 for i=1,#V0IDLUA do h=(h*31+bt(V0IDLUA,i))%16777213 end
+	local h=11569645
 	local _B="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/" local _r={} for i=1,64 do _r[bt(_B,i)]=i-1 end
 	local function D(s)
 		local o={} local oi=0 local st=7117213 local pv=(63+h)%256 local acc,nb=0,0
