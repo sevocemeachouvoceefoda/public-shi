@@ -1,34 +1,3 @@
-local V0IDLUA=[[
-█   █  ███  ███ ████  █     █   █  ███       ███   ███  █   █
-█░  █░█ ░░█  █░░█░░░█ █░    █░  █░█ ░░█     █ ░░░ █ ░░█ ██ ██░
-█░░ █░█░ ░█░ █░░█░░░█░█░░   █░░ █░█████░    █░ ░░░█░ ░█░█░█ █░░
- █░█ ░█░░ █░░█░░█░░ █░█░░   █░░ █░█░░░█░░█  █░░   █░░ █░█░░░█░░
-  █ ░ ░███ ░███░████ ░█████  ███ ░█░░░█░░█░  ███   ███ ░█░░ █░░
-   ░ ░  ░░░ ░░░░ ░░░░ ░░░░░░  ░░░ ░░░  ░░ ░░  ░░░   ░░░ ░░░  ░░
-    ░    ░░░  ░░░ ░░░░  ░░░░░  ░░░  ░   ░  ░   ░░░   ░░░  ░   ░
-                  paid build  ·  v0idlua.com]]
---[==[
--------------------------------------------------------------------
-XWXWXWXWXWXWXWXW                                   WXWXWXWXWXWXWXWX
-WXWXWXWXWXWXWXWX                 A                 XWXWXWXWXWXWXWXW
-XWXWXWXWXWXWXWXW                AWA                WXWXWXWXWXWXWXWX
-WXWXWXWXWXWXWXWX           AA  AWXWA  AA           XWXWXWXWXWXWXWXW
-XWXWXWXWXWXWXWXW            VWXWXWXWXWV            WXWXWXWXWXWXWXWX
-WXWXWXWXWXWXWXWX        AA   VWXWXWXWV   AA        XWXWXWXWXWXWXWXW
-XWXWXWXWXWXWXWXW    VWXWXWXA  VWXWXWV  AXWXWXWV    WXWXWXWXWXWXWXWX
-WXWXWXWXWXWXWXWX     XWXWXWXWXWXWXWXWXWXWXWXWX     XWXWXWXWXWXWXWXW
-XWXWXWXWXWXWXWXW   AXWXWXWXWXWXWXWXWXWXWXWXWXWXA   WXWXWXWXWXWXWXWX
-WXWXWXWXWXWXWXWX      VXWXWXWXWXWXWXWXWXWXWXV      XWXWXWXWXWXWXWXW
-XWXWXWXWXWXWXWXW         VXWXWXWXWXWXWXWXV         WXWXWXWXWXWXWXWX
-WXWXWXWXWXWXWXWX           XWXWXWXWXWXWX           XWXWXWXWXWXWXWXW
-XWXWXWXWXWXWXWXW         AXWXWXWXWXWXWXWXA         WXWXWXWXWXWXWXWX
-WXWXWXWXWXWXWXWX                 I                 XWXWXWXWXWXWXWXW
-XWXWXWXWXWXWXWXW                 I                 WXWXWXWXWXWXWXWX
-WXWXWXWXWXWXWXWX                 I                 XWXWXWXWXWXWXWXW
-XWXWXWXWXWXWXWXW                                   WXWXWXWXWXWXWXWX
--------------------------------------------------------------------
-
-]==]
 return(function(...)
 	local bt,ch,tc,fl=string.byte,string.char,table.concat,math.floor
 	local h=0 for i=1,#V0IDLUA do h=(h*31+bt(V0IDLUA,i))%16777213 end
